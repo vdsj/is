@@ -69,6 +69,13 @@ size = 60
 u = np.reshape(dados[:size, 0], (len(dados[:size, 0]), 1))
 y = np.reshape(dados[:size, 1], (len(dados[:size, 1]), 1))
 
+# exemplo que fuciona 
+# Exemplo de uso
+#np.random.seed(0)
+#n = 10
+#t = np.arange(n)
+#u = np.column_stack((np.sin(t), np.cos(t), np.random.randn(n)))
+#y = 2 * u[:, 0] + 3 * u[:, 1] + 0.5 * u[:, 2] + 0.1 * np.random.randn(n)
 
 max_order = 1000  # Ordem máxima do modelo
 beta, model_terms = frols_algorithm(y, u, max_order)
