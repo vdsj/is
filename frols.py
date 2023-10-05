@@ -67,7 +67,7 @@ dados = np.loadtxt('robot_arm.dat')
 size = 60 
 
 u = np.reshape(dados[:size, 0], (len(dados[:size, 0]), 1))
-y = np.reshape(dados[:size, 1], (len(dados[:size, 1]), 1))
+y = dados[:size, 1]
 
 # exemplo que fuciona 
 # Exemplo de uso
